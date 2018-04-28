@@ -9,6 +9,7 @@ import Register from './Components/Register/Register';
 import ImageLinkForm from './Components/ImageLinkForm/ImageLinkForm';
 import Rank from './Components/Rank/Rank';
 import FaceRecognition from './Components/FaceRecognition/FaceRecognition';
+import partconfig from './partconfig.json'
 
 
  const app = new Clarifai.App({
@@ -16,17 +17,7 @@ import FaceRecognition from './Components/FaceRecognition/FaceRecognition';
       });
       
 
-const particleOptions =  {
-            		particles: {
-            			number: {
-            				value: 150,
-            				density: {
-            					enable: true,
-            					value_area: 900
-            				}
-            			}
-            		}
-            	}
+const particleOptions =  partconfig
 
 const initialState = {
       input: '',
